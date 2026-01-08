@@ -10,7 +10,6 @@ Bude Global specializes in visualizing complex innovation networks and technolog
 
 ## 🚀 Features
 
-- **Bude Global Branding**: Professional blue gradient theme with company identity
 - **Smart Search**: Real-time node search with instant camera focus
 - **Pixel-Perfect Conversion**: 1:1 visual fidelity from original HTML implementation
 - **Data-Driven**: All invention data separated into JSON files for easy editing
@@ -25,7 +24,7 @@ Bude Global specializes in visualizing complex innovation networks and technolog
 
 ```bash
 # Clone the repository
-cd neuro-chain-react
+cd bude-global-neuro-chain-react
 
 # Install dependencies
 npm install
@@ -43,7 +42,7 @@ npm run preview
 ## 🏗️ Project Structure
 
 ```
-neuro-chain-react/
+bude-global-neuro-chain-react/
 ├── public/
 ├── src/
 │   ├── components/          # React components
@@ -209,4 +208,4 @@ MIT
 
 ## 🙏 Acknowledgments
 
-Original concept and design by the neuro-chain visualization project.
+@aravind-govindhasamy
