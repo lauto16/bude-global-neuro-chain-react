@@ -6,30 +6,44 @@
   pointer-events: auto;
 }
 
+.headerContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
   font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   background: linear-gradient(135deg, #0ea5e9, #3b82f6, #6366f1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 0.2rem;
+  line-height: 1.1;
+  margin-bottom: 0.1rem;
 }
 
 .subtitle {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   color: var(--text-muted);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  margin-top: 0.3rem;
-}
-
-.company {
-  font-size: 0.65rem;
-  color: #0ea5e9;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  font-weight: 600;
-  margin-top: 0.2rem;
+  margin: 0;
+}
+
+.logo {
+  flex-shrink: 0;
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 4px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.4);
 }
