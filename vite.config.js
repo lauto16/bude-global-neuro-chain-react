@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
       react(),
       VitePWA({
         registerType: 'autoUpdate',
-        includeAssets: ['favicon.ico', 'images/budeglobal_logo.png'],
+        includeAssets: ['favicon.png', 'apple-touch-icon.png', 'images/budeglobal_logo.png'],
         manifest: {
           name: 'Bude Global Neuro-Chain',
           short_name: 'Neuro-Chain',
