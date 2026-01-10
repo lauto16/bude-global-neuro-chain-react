@@ -2,7 +2,11 @@
 
 **Innovation Network Visualization Platform**
 
+
 Interactive visualization of human innovation as a non-linear network, showing how technologies build upon each other from fire to AGI. Powered by Bude Global.
+
+![Neuro-Chain Visualization](images/neuro-chain-preview.png)
+
 
 ## 🌟 About Bude Global
 
@@ -205,6 +209,14 @@ This visualization represents invention as a **non-linear network** rather than 
 ## 📝 License
 
 MIT
+
+## 🌐 Community & Inspiration
+
+- **Live Project**: [https://invent.budeglobal.in/](https://invent.budeglobal.in/)
+- **Join Our Community**: [WhatsApp Group](https://chat.whatsapp.com/JSa5qnGbqAE76DEav1KCK6)
+- **Inspiration**: This project was inspired by watching [The Thinking Game](https://www.youtube.com/watch?v=d95J8yzvjbQ) documentary from Google DeepMind.
+- **Official Channel**: [The Thinking Game Film](https://www.youtube.com/channel/UC0SOuDkpL6qpIF1o4wRhqRQ)
+- **Community Hub**: [Bude Global Community](https://www.budeglobal.in/community) - View our projects and contributors.
 
 ## 🙏 Acknowledgments
 
