@@ -42,8 +42,8 @@
   width: 84px;
   height: 84px;
   object-fit: contain;
-  /* Removed card background styles */
-  filter: drop-shadow(0 0 10px rgba(14, 165, 233, 0.4)); /* Optional: keeping a subtle glow on the image itself */
+  /* White Neon Glow Effect */
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.4));
 }
 
 @media (max-width: 768px) {

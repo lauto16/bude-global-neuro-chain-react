@@ -57,16 +57,31 @@ const SearchBar = React.memo(({ nodes, onNodeSelect, clusters, inputRef }) => {
       .slice(0, 10);
   }, [searchTerm, nodes, clusters]);
 
+  const [isExpanded, setIsExpanded] = useState(false);
+
   const handleSelect = useCallback((node) => {
     onNodeSelect(node);
     setSearchTerm('');
     setIsOpen(false);
     setSelectedIndex(0);
+    setIsExpanded(false);
   }, [onNodeSelect]);
 
-  const handleKeyDown = useCallback((e) => {
-    if (!isOpen || filteredNodes.length === 0) return;
+  const handleBlur = useCallback(() => {
+    // Small delay to allow click events on results/clear button
+    setTimeout(() => {
+        setIsOpen(false);
+        if (!searchTerm) {
+            setIsExpanded(false);
+        }
+    }, 200);
+  }, [searchTerm]);
 
+  const handleKeyDown = useCallback((e) => {
+    if (!isOpen && !isExpanded) return;
+    
+    // ... existing key logic ...
+    
     switch (e.key) {
       case 'ArrowDown':
         e.preventDefault();
@@ -85,43 +100,61 @@ const SearchBar = React.memo(({ nodes, onNodeSelect, clusters, inputRef }) => {
       case 'Escape':
         setIsOpen(false);
         setSearchTerm('');
+        setIsExpanded(false);
         break;
       default:
         break;
     }
-  }, [isOpen, filteredNodes, selectedIndex, handleSelect]);
+  }, [isOpen, isExpanded, filteredNodes, selectedIndex, handleSelect]);
 
   return (
     <>
       <div
         className={`${styles.backdrop} ${isOpen ? styles.backdropVisible : ''}`}
-        onClick={() => setIsOpen(false)}
+        onClick={() => {
+            setIsOpen(false);
+            if (!searchTerm) setIsExpanded(false);
+        }}
       />
-      <div className={styles.searchContainer}>
+      <div 
+        className={`${styles.searchContainer} ${isExpanded ? styles.expanded : ''}`}
+        onClick={() => {
+            if (!isExpanded) {
+                setIsExpanded(true);
+                // focus input after expansion
+                setTimeout(() => inputRef.current?.focus(), 100);
+            }
+        }}
+      >
         <div className={styles.searchBox}>
           <span className={styles.searchIcon}>🔍</span>
           <input
             ref={inputRef}
             type="text"
             className={styles.searchInput}
-            placeholder="Search innovations... (Ctrl+K)"
+            placeholder="Search..."
             value={searchTerm}
             onChange={(e) => {
               setSearchTerm(e.target.value);
               setIsOpen(true);
               setSelectedIndex(0);
             }}
-            onFocus={() => setIsOpen(true)}
-            onBlur={() => setTimeout(() => setIsOpen(false), 200)}
+            onFocus={() => {
+                setIsOpen(true);
+                setIsExpanded(true);
+            }}
+            onBlur={handleBlur}
             onKeyDown={handleKeyDown}
           />
           {searchTerm && (
             <button
               className={styles.clearBtn}
-              onClick={() => {
+              onClick={(e) => {
+                e.stopPropagation();
                 setSearchTerm('');
                 setIsOpen(false);
                 setSelectedIndex(0);
+                inputRef.current?.focus();
               }}
             >
               ×

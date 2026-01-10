@@ -1,7 +1,8 @@
 .minimap {
   position: fixed;
-  top: 2rem;
-  right: 440px;
+  bottom: 8rem; /* Above controls + some spacing */
+  right: 2rem;
+  top: auto;
   width: 150px;
   height: 150px;
   background: rgba(12,12,18,0.95);
