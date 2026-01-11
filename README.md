@@ -10,10 +10,9 @@
 ## 🌐 Quick Links
 
 - **[Live Experience](https://invent.budeglobal.in/)** - Interactive visualization platform
-- **[Documentation](https://budeglobal.in/docs/neuro-chain)** - Technical specifications
-- **[Community](https://budeglobal.in/community)** - Join researchers and developers
-- **[GitHub Repository](https://github.com/BUDEGlobalEnterprise/bude-global-neuro-chain-react)** - Source code
-- **[Academic Paper](https://arxiv.org/abs/neuro-chain)** - Methodology (pending publication)
+- **[Join Community](https://chat.whatsapp.com/JSa5qnGbqAE76DEav1KCK6)** - WhatsApp Group for researchers
+- **[Inspiration](https://www.youtube.com/watch?v=d95J8yzvjbQ)** - The Thinking Game (DeepMind)
+- **[GitHub Repository](https://github.com/BUDEGlobalEnterprise/bude-global-neuro-chain-react)** - Source code and issues
 
 ---
 
