@@ -209,4 +209,4 @@ For commercial integration or enterprise licensing, contact [enterprise@budeglob
 **Bude Global Neuro-Chain**  
 *Visualizing the connected intelligence of human civilization*
 
-Copyright © 2024 Bude Global. All rights reserved.
+Copyright © 2026 Bude Global. All rights reserved.
