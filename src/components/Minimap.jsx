@@ -62,7 +62,7 @@ const Minimap = React.memo(({ nodes, clusters, camera, zoom, onNavigate }) => {
 
       ctx.beginPath();
       ctx.arc(x, y, size, 0, Math.PI * 2);
-      ctx.fillStyle = clusters[node.cluster]?.color || '#666';
+      ctx.fillStyle = clusters[node.cluster]?.color || '#666666';
       ctx.globalAlpha = 0.6;
       ctx.fill();
       ctx.globalAlpha = 1;

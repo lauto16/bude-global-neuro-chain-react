@@ -77,7 +77,6 @@
     "y": 80,
     "size": 12
   },
-
   {
     "id": "stone-tools",
     "label": "Stone Tools",
@@ -197,7 +196,6 @@
     "size": 15,
     "year": 1300
   },
-
   {
     "id": "steam",
     "label": "Steam Engine",
@@ -286,7 +284,6 @@
     "size": 15,
     "year": 1821
   },
-
   {
     "id": "agriculture",
     "label": "Agriculture",
@@ -411,7 +408,6 @@
     "size": 14,
     "year": 1977
   },
-
   {
     "id": "language",
     "label": "Language",
@@ -573,7 +569,6 @@
     "size": 15,
     "year": 1991
   },
-
   {
     "id": "bronze",
     "label": "Bronze",
@@ -680,7 +675,6 @@
     "size": 11,
     "year": 1991
   },
-
   {
     "id": "writing-social",
     "label": "Record Keeping",
@@ -767,7 +761,6 @@
     "y": -260,
     "size": 11
   },
-
   {
     "id": "telescope",
     "label": "Telescope",
@@ -856,7 +849,6 @@
     "size": 14,
     "year": 1935
   },
-
   {
     "id": "agi",
     "label": "AGI",
@@ -942,5 +934,869 @@
     "y": 360,
     "size": 12,
     "year": 2016
+  },
+  {
+    "id": "algorithms",
+    "label": "Algorithms",
+    "cluster": "info",
+    "x": 298,
+    "y": -143,
+    "size": 12
+  },
+  {
+    "id": "binary-code",
+    "label": "Binary Code",
+    "cluster": "info",
+    "x": 337,
+    "y": -178,
+    "size": 8
+  },
+  {
+    "id": "punch-cards",
+    "label": "Punch Cards",
+    "cluster": "info",
+    "x": 513,
+    "y": 172,
+    "size": 10
+  },
+  {
+    "id": "gui",
+    "label": "GUI",
+    "cluster": "info",
+    "x": 448,
+    "y": 121,
+    "size": 9
+  },
+  {
+    "id": "mouse",
+    "label": "Mouse",
+    "cluster": "info",
+    "x": 292,
+    "y": -111,
+    "size": 8
+  },
+  {
+    "id": "hypertext",
+    "label": "Hypertext",
+    "cluster": "info",
+    "x": 603,
+    "y": 235,
+    "size": 12
+  },
+  {
+    "id": "search-engine",
+    "label": "Search Engine",
+    "cluster": "info",
+    "x": 605,
+    "y": 205,
+    "size": 10
+  },
+  {
+    "id": "social-media",
+    "label": "Social Media",
+    "cluster": "info",
+    "x": 592,
+    "y": 211,
+    "size": 11
+  },
+  {
+    "id": "e-commerce",
+    "label": "E-Commerce",
+    "cluster": "info",
+    "x": 591,
+    "y": 194,
+    "size": 10
+  },
+  {
+    "id": "streaming",
+    "label": "Streaming",
+    "cluster": "info",
+    "x": 589,
+    "y": 246,
+    "size": 9
+  },
+  {
+    "id": "cybersecurity",
+    "label": "Cybersecurity",
+    "cluster": "info",
+    "x": 511,
+    "y": 185,
+    "size": 11
+  },
+  {
+    "id": "big-data",
+    "label": "Big Data",
+    "cluster": "info",
+    "x": 571,
+    "y": 143,
+    "size": 11
+  },
+  {
+    "id": "virtual-reality",
+    "label": "Virtual Reality",
+    "cluster": "info",
+    "x": 502,
+    "y": 126,
+    "size": 9
+  },
+  {
+    "id": "augmented-reality",
+    "label": "Augmented Reality",
+    "cluster": "info",
+    "x": 585,
+    "y": 336,
+    "size": 9
+  },
+  {
+    "id": "smart-contracts",
+    "label": "Smart Contracts",
+    "cluster": "info",
+    "x": 638,
+    "y": 175,
+    "size": 12
+  },
+  {
+    "id": "dao",
+    "label": "DAO",
+    "cluster": "info",
+    "x": 618,
+    "y": 171,
+    "size": 10
+  },
+  {
+    "id": "nft",
+    "label": "NFT",
+    "cluster": "info",
+    "x": 613,
+    "y": 139,
+    "size": 8
+  },
+  {
+    "id": "web3",
+    "label": "Web3",
+    "cluster": "info",
+    "x": 596,
+    "y": 101,
+    "size": 8
+  },
+  {
+    "id": "5g",
+    "label": "5G",
+    "cluster": "info",
+    "x": 604,
+    "y": 164,
+    "size": 9
+  },
+  {
+    "id": "iot",
+    "label": "IoT",
+    "cluster": "info",
+    "x": 590,
+    "y": 246,
+    "size": 9
+  },
+  {
+    "id": "edge-computing",
+    "label": "Edge Computing",
+    "cluster": "info",
+    "x": 649,
+    "y": 173,
+    "size": 12
+  },
+  {
+    "id": "serverless",
+    "label": "Serverless",
+    "cluster": "info",
+    "x": 616,
+    "y": 210,
+    "size": 11
+  },
+  {
+    "id": "microservices",
+    "label": "Microservices",
+    "cluster": "info",
+    "x": 661,
+    "y": 168,
+    "size": 11
+  },
+  {
+    "id": "containers",
+    "label": "Containers",
+    "cluster": "info",
+    "x": 614,
+    "y": 183,
+    "size": 11
+  },
+  {
+    "id": "perceptron",
+    "label": "Perceptron",
+    "cluster": "agi",
+    "x": 568,
+    "y": 315,
+    "size": 11
+  },
+  {
+    "id": "neural-networks",
+    "label": "Neural Networks",
+    "cluster": "agi",
+    "x": 591,
+    "y": 330,
+    "size": 8
+  },
+  {
+    "id": "backpropagation",
+    "label": "Backpropagation",
+    "cluster": "agi",
+    "x": 394,
+    "y": 416,
+    "size": 10
+  },
+  {
+    "id": "cnn",
+    "label": "CNN",
+    "cluster": "agi",
+    "x": 610,
+    "y": 310,
+    "size": 12
+  },
+  {
+    "id": "rnn",
+    "label": "RNN",
+    "cluster": "agi",
+    "x": 516,
+    "y": 286,
+    "size": 10
+  },
+  {
+    "id": "transformers",
+    "label": "Transformers",
+    "cluster": "agi",
+    "x": 522,
+    "y": 380,
+    "size": 9
+  },
+  {
+    "id": "attention-mechanism",
+    "label": "Attention Mechanism",
+    "cluster": "agi",
+    "x": 404,
+    "y": 384,
+    "size": 9
+  },
+  {
+    "id": "gans",
+    "label": "GANs",
+    "cluster": "agi",
+    "x": 594,
+    "y": 328,
+    "size": 10
+  },
+  {
+    "id": "alphago",
+    "label": "AlphaGo",
+    "cluster": "agi",
+    "x": 493,
+    "y": 518,
+    "size": 9
+  },
+  {
+    "id": "expert-systems",
+    "label": "Expert Systems",
+    "cluster": "agi",
+    "x": 432,
+    "y": 433,
+    "size": 8
+  },
+  {
+    "id": "computer-vision",
+    "label": "Computer Vision",
+    "cluster": "agi",
+    "x": 445,
+    "y": 431,
+    "size": 10
+  },
+  {
+    "id": "nlp",
+    "label": "NLP",
+    "cluster": "agi",
+    "x": 446,
+    "y": 364,
+    "size": 12
+  },
+  {
+    "id": "speech-recognition",
+    "label": "Speech Recognition",
+    "cluster": "agi",
+    "x": 415,
+    "y": 375,
+    "size": 8
+  },
+  {
+    "id": "generative-ai",
+    "label": "Generative AI",
+    "cluster": "agi",
+    "x": 480,
+    "y": 376,
+    "size": 12
+  },
+  {
+    "id": "automl",
+    "label": "AutoML",
+    "cluster": "agi",
+    "x": 488,
+    "y": 271,
+    "size": 11
+  },
+  {
+    "id": "explainable-ai",
+    "label": "Explainable AI",
+    "cluster": "agi",
+    "x": 420,
+    "y": 400,
+    "size": 10
+  },
+  {
+    "id": "federated-learning",
+    "label": "Federated Learning",
+    "cluster": "agi",
+    "x": 521,
+    "y": 329,
+    "size": 12
+  },
+  {
+    "id": "embodied-ai",
+    "label": "Embodied AI",
+    "cluster": "agi",
+    "x": -180,
+    "y": 331,
+    "size": 9
+  },
+  {
+    "id": "anesthesia",
+    "label": "Anesthesia",
+    "cluster": "bio",
+    "x": 69,
+    "y": -255,
+    "size": 11
+  },
+  {
+    "id": "x-ray",
+    "label": "X-Ray",
+    "cluster": "bio",
+    "x": 78,
+    "y": -251,
+    "size": 8
+  },
+  {
+    "id": "mri",
+    "label": "MRI",
+    "cluster": "bio",
+    "x": -153,
+    "y": -223,
+    "size": 10
+  },
+  {
+    "id": "ct-scan",
+    "label": "CT Scan",
+    "cluster": "bio",
+    "x": -129,
+    "y": -205,
+    "size": 8
+  },
+  {
+    "id": "ultrasound",
+    "label": "Ultrasound",
+    "cluster": "bio",
+    "x": 46,
+    "y": -193,
+    "size": 9
+  },
+  {
+    "id": "pacemaker",
+    "label": "Pacemaker",
+    "cluster": "bio",
+    "x": 66,
+    "y": -233,
+    "size": 11
+  },
+  {
+    "id": "prosthetics",
+    "label": "Prosthetics",
+    "cluster": "bio",
+    "x": -9,
+    "y": -284,
+    "size": 12
+  },
+  {
+    "id": "bionics",
+    "label": "Bionics",
+    "cluster": "bio",
+    "x": -172,
+    "y": -253,
+    "size": 10
+  },
+  {
+    "id": "organ-transplant",
+    "label": "Organ Transplant",
+    "cluster": "bio",
+    "x": 21,
+    "y": -241,
+    "size": 9
+  },
+  {
+    "id": "stem-cells",
+    "label": "Stem Cells",
+    "cluster": "bio",
+    "x": -142,
+    "y": -322,
+    "size": 10
+  },
+  {
+    "id": "cloning",
+    "label": "Cloning",
+    "cluster": "bio",
+    "x": -141,
+    "y": -324,
+    "size": 8
+  },
+  {
+    "id": "gene-therapy",
+    "label": "Gene Therapy",
+    "cluster": "bio",
+    "x": -162,
+    "y": -311,
+    "size": 11
+  },
+  {
+    "id": "immunotherapy",
+    "label": "Immunotherapy",
+    "cluster": "bio",
+    "x": 76,
+    "y": -289,
+    "size": 8
+  },
+  {
+    "id": "telemedicine",
+    "label": "Telemedicine",
+    "cluster": "bio",
+    "x": 605,
+    "y": 193,
+    "size": 8
+  },
+  {
+    "id": "wearables",
+    "label": "Wearables",
+    "cluster": "bio",
+    "x": 595,
+    "y": 96,
+    "size": 12
+  },
+  {
+    "id": "bioinformatics",
+    "label": "Bioinformatics",
+    "cluster": "bio",
+    "x": 471,
+    "y": 168,
+    "size": 9
+  },
+  {
+    "id": "brain-computer-interface",
+    "label": "Brain-Computer Interface",
+    "cluster": "bio",
+    "x": 113,
+    "y": -356,
+    "size": 9
+  },
+  {
+    "id": "neuroplasticity",
+    "label": "Neuroplasticity",
+    "cluster": "bio",
+    "x": -137,
+    "y": -186,
+    "size": 10
+  },
+  {
+    "id": "hydropower",
+    "label": "Hydropower",
+    "cluster": "energy",
+    "x": 236,
+    "y": 86,
+    "size": 9
+  },
+  {
+    "id": "geothermal",
+    "label": "Geothermal",
+    "cluster": "energy",
+    "x": 233,
+    "y": 157,
+    "size": 11
+  },
+  {
+    "id": "tidal-power",
+    "label": "Tidal Power",
+    "cluster": "energy",
+    "x": 139,
+    "y": 168,
+    "size": 8
+  },
+  {
+    "id": "biofuels",
+    "label": "Biofuels",
+    "cluster": "energy",
+    "x": -149,
+    "y": -211,
+    "size": 11
+  },
+  {
+    "id": "hydrogen-fuel",
+    "label": "Hydrogen Fuel",
+    "cluster": "energy",
+    "x": 122,
+    "y": 224,
+    "size": 9
+  },
+  {
+    "id": "solid-state-battery",
+    "label": "Solid State Battery",
+    "cluster": "energy",
+    "x": 306,
+    "y": 55,
+    "size": 8
+  },
+  {
+    "id": "wireless-power",
+    "label": "Wireless Power",
+    "cluster": "energy",
+    "x": 266,
+    "y": 167,
+    "size": 8
+  },
+  {
+    "id": "superconductors",
+    "label": "Superconductors",
+    "cluster": "energy",
+    "x": 245,
+    "y": 99,
+    "size": 12
+  },
+  {
+    "id": "smart-grid",
+    "label": "Smart Grid",
+    "cluster": "energy",
+    "x": 313,
+    "y": 209,
+    "size": 12
+  },
+  {
+    "id": "carbon-capture",
+    "label": "Carbon Capture",
+    "cluster": "energy",
+    "x": 168,
+    "y": 216,
+    "size": 11
+  },
+  {
+    "id": "space-suit",
+    "label": "Space Suit",
+    "cluster": "space",
+    "x": -424,
+    "y": -406,
+    "size": 11
+  },
+  {
+    "id": "lunar-lander",
+    "label": "Lunar Lander",
+    "cluster": "space",
+    "x": -420,
+    "y": -462,
+    "size": 9
+  },
+  {
+    "id": "mars-rover",
+    "label": "Mars Rover",
+    "cluster": "space",
+    "x": -338,
+    "y": -396,
+    "size": 8
+  },
+  {
+    "id": "voyager",
+    "label": "Voyager",
+    "cluster": "space",
+    "x": -420,
+    "y": -333,
+    "size": 9
+  },
+  {
+    "id": "hubble",
+    "label": "Hubble",
+    "cluster": "space",
+    "x": -254,
+    "y": -361,
+    "size": 8
+  },
+  {
+    "id": "james-webb",
+    "label": "James Webb",
+    "cluster": "space",
+    "x": -248,
+    "y": -447,
+    "size": 12
+  },
+  {
+    "id": "space-shuttle",
+    "label": "Space Shuttle",
+    "cluster": "space",
+    "x": -413,
+    "y": -378,
+    "size": 8
+  },
+  {
+    "id": "reusable-rockets",
+    "label": "Reusable Rockets",
+    "cluster": "space",
+    "x": -425,
+    "y": -390,
+    "size": 12
+  },
+  {
+    "id": "starlink",
+    "label": "Starlink",
+    "cluster": "space",
+    "x": -419,
+    "y": -316,
+    "size": 10
+  },
+  {
+    "id": "space-tourism",
+    "label": "Space Tourism",
+    "cluster": "space",
+    "x": -382,
+    "y": -445,
+    "size": 10
+  },
+  {
+    "id": "asteroid-mining",
+    "label": "Asteroid Mining",
+    "cluster": "space",
+    "x": -396,
+    "y": -386,
+    "size": 9
+  },
+  {
+    "id": "sextant",
+    "label": "Sextant",
+    "cluster": "tools",
+    "x": -397,
+    "y": -281,
+    "size": 11
+  },
+  {
+    "id": "gyroscope",
+    "label": "Gyroscope",
+    "cluster": "tools",
+    "x": -249,
+    "y": -61,
+    "size": 11
+  },
+  {
+    "id": "laser",
+    "label": "Laser",
+    "cluster": "tools",
+    "x": -242,
+    "y": -61,
+    "size": 10
+  },
+  {
+    "id": "lidar",
+    "label": "Lidar",
+    "cluster": "tools",
+    "x": -232,
+    "y": -61,
+    "size": 12
+  },
+  {
+    "id": "microchip",
+    "label": "Microchip",
+    "cluster": "tools",
+    "x": 546,
+    "y": 14,
+    "size": 11
+  },
+  {
+    "id": "drone",
+    "label": "Drone",
+    "cluster": "tools",
+    "x": -231,
+    "y": 317,
+    "size": 11
+  },
+  {
+    "id": "autonomous-vehicles",
+    "label": "Autonomous Vehicles",
+    "cluster": "tools",
+    "x": -237,
+    "y": 343,
+    "size": 9
+  },
+  {
+    "id": "exoskeleton",
+    "label": "Exoskeleton",
+    "cluster": "tools",
+    "x": -215,
+    "y": 304,
+    "size": 11
+  },
+  {
+    "id": "paper",
+    "label": "Paper",
+    "cluster": "materials",
+    "x": 379,
+    "y": -66,
+    "size": 10
+  },
+  {
+    "id": "silk",
+    "label": "Silk",
+    "cluster": "materials",
+    "x": -168,
+    "y": -221,
+    "size": 8
+  },
+  {
+    "id": "gunpowder",
+    "label": "Gunpowder",
+    "cluster": "materials",
+    "x": -72,
+    "y": 170,
+    "size": 9
+  },
+  {
+    "id": "aluminum",
+    "label": "Aluminum",
+    "cluster": "materials",
+    "x": -80,
+    "y": 178,
+    "size": 12
+  },
+  {
+    "id": "titanium",
+    "label": "Titanium",
+    "cluster": "materials",
+    "x": -6,
+    "y": 177,
+    "size": 10
+  },
+  {
+    "id": "silicon",
+    "label": "Silicon",
+    "cluster": "materials",
+    "x": 172,
+    "y": 334,
+    "size": 10
+  },
+  {
+    "id": "carbon-fiber",
+    "label": "Carbon Fiber",
+    "cluster": "materials",
+    "x": -2,
+    "y": 372,
+    "size": 8
+  },
+  {
+    "id": "aerogel",
+    "label": "Aerogel",
+    "cluster": "materials",
+    "x": -100,
+    "y": 172,
+    "size": 10
+  },
+  {
+    "id": "bioplastics",
+    "label": "Bioplastics",
+    "cluster": "materials",
+    "x": 76,
+    "y": 378,
+    "size": 10
+  },
+  {
+    "id": "trade-routes",
+    "label": "Trade Routes",
+    "cluster": "social",
+    "x": 428,
+    "y": -208,
+    "size": 12
+  },
+  {
+    "id": "currency",
+    "label": "Currency",
+    "cluster": "social",
+    "x": 348,
+    "y": -279,
+    "size": 10
+  },
+  {
+    "id": "stock-market",
+    "label": "Stock Market",
+    "cluster": "social",
+    "x": 421,
+    "y": -166,
+    "size": 10
+  },
+  {
+    "id": "human-rights",
+    "label": "Human Rights",
+    "cluster": "social",
+    "x": 161,
+    "y": -333,
+    "size": 11
+  },
+  {
+    "id": "globalism",
+    "label": "Globalism",
+    "cluster": "social",
+    "x": 280,
+    "y": -245,
+    "size": 10
+  },
+  {
+    "id": "social-security",
+    "label": "Social Security",
+    "cluster": "social",
+    "x": 235,
+    "y": -316,
+    "size": 12
+  },
+  {
+    "id": "universal-healthcare",
+    "label": "Universal Healthcare",
+    "cluster": "social",
+    "x": 66,
+    "y": -239,
+    "size": 12
+  },
+  {
+    "id": "education",
+    "label": "Education",
+    "cluster": "social",
+    "x": 339,
+    "y": -360,
+    "size": 8
+  },
+  {
+    "id": "libraries",
+    "label": "Libraries",
+    "cluster": "social",
+    "x": 381,
+    "y": -115,
+    "size": 8
+  },
+  {
+    "id": "museums",
+    "label": "Museums",
+    "cluster": "social",
+    "x": 249,
+    "y": -281,
+    "size": 11
   }
 ]

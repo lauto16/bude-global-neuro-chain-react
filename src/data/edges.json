@@ -1,12 +1,52 @@
 [
-  { "source": "fire", "target": "cooking", "type": "forward", "weight": 10 },
-  { "source": "fire", "target": "warmth", "type": "forward", "weight": 9 },
-  { "source": "fire", "target": "light", "type": "forward", "weight": 8 },
-  { "source": "fire", "target": "ceramics", "type": "forward", "weight": 8 },
-  { "source": "fire", "target": "metallurgy", "type": "forward", "weight": 10 },
-  { "source": "fire", "target": "charcoal", "type": "forward", "weight": 7 },
-  { "source": "fire", "target": "glass", "type": "forward", "weight": 7 },
-  { "source": "fire", "target": "kiln", "type": "forward", "weight": 8 },
+  {
+    "source": "fire",
+    "target": "cooking",
+    "type": "forward",
+    "weight": 10
+  },
+  {
+    "source": "fire",
+    "target": "warmth",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "fire",
+    "target": "light",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "fire",
+    "target": "ceramics",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "fire",
+    "target": "metallurgy",
+    "type": "forward",
+    "weight": 10
+  },
+  {
+    "source": "fire",
+    "target": "charcoal",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "fire",
+    "target": "glass",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "fire",
+    "target": "kiln",
+    "type": "forward",
+    "weight": 8
+  },
   {
     "source": "stone-tools",
     "target": "fire",
@@ -25,8 +65,12 @@
     "type": "forward",
     "weight": 8
   },
-  { "source": "kiln", "target": "ceramics", "type": "forward", "weight": 7 },
-
+  {
+    "source": "kiln",
+    "target": "ceramics",
+    "type": "forward",
+    "weight": 7
+  },
   {
     "source": "stone-tools",
     "target": "cutting",
@@ -57,9 +101,24 @@
     "type": "forward",
     "weight": 7
   },
-  { "source": "hammers", "target": "chisels", "type": "forward", "weight": 8 },
-  { "source": "chisels", "target": "lathe", "type": "forward", "weight": 7 },
-  { "source": "lathe", "target": "precision", "type": "forward", "weight": 9 },
+  {
+    "source": "hammers",
+    "target": "chisels",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "chisels",
+    "target": "lathe",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "lathe",
+    "target": "precision",
+    "type": "forward",
+    "weight": 9
+  },
   {
     "source": "lathe",
     "target": "machine-tools",
@@ -90,26 +149,60 @@
     "type": "forward",
     "weight": 9
   },
-  { "source": "wheel", "target": "gear", "type": "forward", "weight": 8 },
-  { "source": "wheel", "target": "pulley", "type": "forward", "weight": 7 },
-  { "source": "lever", "target": "pulley", "type": "forward", "weight": 6 },
-  { "source": "gear", "target": "clock", "type": "forward", "weight": 9 },
-  { "source": "clock", "target": "precision", "type": "forward", "weight": 8 },
+  {
+    "source": "wheel",
+    "target": "gear",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "wheel",
+    "target": "pulley",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "lever",
+    "target": "pulley",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "gear",
+    "target": "clock",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "clock",
+    "target": "precision",
+    "type": "forward",
+    "weight": 8
+  },
   {
     "source": "gear",
     "target": "machine-tools",
     "type": "forward",
     "weight": 7
   },
-
-  { "source": "metallurgy", "target": "steam", "type": "forward", "weight": 9 },
+  {
+    "source": "metallurgy",
+    "target": "steam",
+    "type": "forward",
+    "weight": 9
+  },
   {
     "source": "steam",
     "target": "electricity",
     "type": "forward",
     "weight": 8
   },
-  { "source": "electricity", "target": "grid", "type": "forward", "weight": 9 },
+  {
+    "source": "electricity",
+    "target": "grid",
+    "type": "forward",
+    "weight": 9
+  },
   {
     "source": "electricity",
     "target": "batteries",
@@ -122,11 +215,36 @@
     "type": "forward",
     "weight": 9
   },
-  { "source": "steam", "target": "combustion", "type": "forward", "weight": 7 },
-  { "source": "grid", "target": "nuclear", "type": "forward", "weight": 8 },
-  { "source": "grid", "target": "solar", "type": "forward", "weight": 7 },
-  { "source": "grid", "target": "wind-power", "type": "forward", "weight": 6 },
-  { "source": "nuclear", "target": "fusion", "type": "forward", "weight": 9 },
+  {
+    "source": "steam",
+    "target": "combustion",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "grid",
+    "target": "nuclear",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "grid",
+    "target": "solar",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "grid",
+    "target": "wind-power",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "nuclear",
+    "target": "fusion",
+    "type": "forward",
+    "weight": 9
+  },
   {
     "source": "electricity",
     "target": "computing",
@@ -145,7 +263,6 @@
     "type": "forward",
     "weight": 8
   },
-
   {
     "source": "cooking",
     "target": "agriculture",
@@ -188,14 +305,24 @@
     "type": "forward",
     "weight": 9
   },
-  { "source": "genetics", "target": "crispr", "type": "forward", "weight": 10 },
+  {
+    "source": "genetics",
+    "target": "crispr",
+    "type": "forward",
+    "weight": 10
+  },
   {
     "source": "genetics",
     "target": "dna-sequencing",
     "type": "forward",
     "weight": 9
   },
-  { "source": "crispr", "target": "synbio", "type": "forward", "weight": 9 },
+  {
+    "source": "crispr",
+    "target": "synbio",
+    "type": "forward",
+    "weight": 9
+  },
   {
     "source": "medicine",
     "target": "antibiotics",
@@ -226,7 +353,12 @@
     "type": "forward",
     "weight": 7
   },
-  { "source": "glass", "target": "microscope", "type": "forward", "weight": 8 },
+  {
+    "source": "glass",
+    "target": "microscope",
+    "type": "forward",
+    "weight": 8
+  },
   {
     "source": "microscope",
     "target": "medicine",
@@ -239,16 +371,30 @@
     "type": "forward",
     "weight": 9
   },
-  { "source": "vaccines", "target": "mrna", "type": "forward", "weight": 8 },
-  { "source": "genetics", "target": "mrna", "type": "forward", "weight": 9 },
-
+  {
+    "source": "vaccines",
+    "target": "mrna",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "genetics",
+    "target": "mrna",
+    "type": "forward",
+    "weight": 9
+  },
   {
     "source": "language",
     "target": "writing",
     "type": "forward",
     "weight": 10
   },
-  { "source": "writing", "target": "printing", "type": "forward", "weight": 9 },
+  {
+    "source": "writing",
+    "target": "printing",
+    "type": "forward",
+    "weight": 9
+  },
   {
     "source": "printing",
     "target": "telegraph",
@@ -267,8 +413,18 @@
     "type": "forward",
     "weight": 9
   },
-  { "source": "telegraph", "target": "radio", "type": "forward", "weight": 7 },
-  { "source": "radio", "target": "television", "type": "forward", "weight": 8 },
+  {
+    "source": "telegraph",
+    "target": "radio",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "radio",
+    "target": "television",
+    "type": "forward",
+    "weight": 8
+  },
   {
     "source": "telegraph",
     "target": "computing",
@@ -293,8 +449,18 @@
     "type": "forward",
     "weight": 10
   },
-  { "source": "internet", "target": "ml", "type": "forward", "weight": 8 },
-  { "source": "internet", "target": "www", "type": "forward", "weight": 10 },
+  {
+    "source": "internet",
+    "target": "ml",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "internet",
+    "target": "www",
+    "type": "forward",
+    "weight": 10
+  },
   {
     "source": "internet",
     "target": "cloud-computing",
@@ -349,25 +515,54 @@
     "type": "forward",
     "weight": 8
   },
-
   {
     "source": "metallurgy",
     "target": "bronze",
     "type": "forward",
     "weight": 9
   },
-  { "source": "bronze", "target": "iron", "type": "forward", "weight": 9 },
-  { "source": "iron", "target": "steel", "type": "forward", "weight": 9 },
-  { "source": "iron", "target": "alloys", "type": "forward", "weight": 7 },
-  { "source": "steel", "target": "concrete", "type": "forward", "weight": 6 },
-  { "source": "steel", "target": "plastics", "type": "forward", "weight": 6 },
+  {
+    "source": "bronze",
+    "target": "iron",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "iron",
+    "target": "steel",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "iron",
+    "target": "alloys",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "steel",
+    "target": "concrete",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "steel",
+    "target": "plastics",
+    "type": "forward",
+    "weight": 6
+  },
   {
     "source": "plastics",
     "target": "semiconductors",
     "type": "forward",
     "weight": 7
   },
-  { "source": "plastics", "target": "rubber", "type": "backlink", "weight": 5 },
+  {
+    "source": "plastics",
+    "target": "rubber",
+    "type": "backlink",
+    "weight": 5
+  },
   {
     "source": "semiconductors",
     "target": "transistor",
@@ -404,7 +599,6 @@
     "type": "forward",
     "weight": 7
   },
-
   {
     "source": "writing",
     "target": "writing-social",
@@ -417,8 +611,18 @@
     "type": "forward",
     "weight": 9
   },
-  { "source": "money", "target": "markets", "type": "forward", "weight": 9 },
-  { "source": "money", "target": "banking", "type": "forward", "weight": 9 },
+  {
+    "source": "money",
+    "target": "markets",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "money",
+    "target": "banking",
+    "type": "forward",
+    "weight": 9
+  },
   {
     "source": "markets",
     "target": "corporations",
@@ -443,16 +647,30 @@
     "type": "forward",
     "weight": 8
   },
-  { "source": "democracy", "target": "law", "type": "forward", "weight": 9 },
-  { "source": "law", "target": "universities", "type": "forward", "weight": 7 },
+  {
+    "source": "democracy",
+    "target": "law",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "law",
+    "target": "universities",
+    "type": "forward",
+    "weight": 7
+  },
   {
     "source": "universities",
     "target": "genetics",
     "type": "backlink",
     "weight": 6
   },
-
-  { "source": "glass", "target": "telescope", "type": "forward", "weight": 9 },
+  {
+    "source": "glass",
+    "target": "telescope",
+    "type": "forward",
+    "weight": 9
+  },
   {
     "source": "telescope",
     "target": "rocketry",
@@ -465,42 +683,96 @@
     "type": "forward",
     "weight": 10
   },
-  { "source": "satellites", "target": "gps", "type": "forward", "weight": 10 },
+  {
+    "source": "satellites",
+    "target": "gps",
+    "type": "forward",
+    "weight": 10
+  },
   {
     "source": "satellites",
     "target": "space-stations",
     "type": "forward",
     "weight": 8
   },
-  { "source": "gps", "target": "internet", "type": "backlink", "weight": 6 },
-  { "source": "gps", "target": "smartphone", "type": "forward", "weight": 8 },
+  {
+    "source": "gps",
+    "target": "internet",
+    "type": "backlink",
+    "weight": 6
+  },
+  {
+    "source": "gps",
+    "target": "smartphone",
+    "type": "forward",
+    "weight": 8
+  },
   {
     "source": "compass",
     "target": "navigation",
     "type": "forward",
     "weight": 9
   },
-  { "source": "navigation", "target": "gps", "type": "forward", "weight": 7 },
-  { "source": "maps", "target": "navigation", "type": "forward", "weight": 8 },
-  { "source": "telescope", "target": "maps", "type": "forward", "weight": 6 },
-  { "source": "radio", "target": "radar", "type": "forward", "weight": 8 },
-  { "source": "radar", "target": "satellites", "type": "forward", "weight": 6 },
-
-  { "source": "ml", "target": "agi", "type": "forward", "weight": 9 },
+  {
+    "source": "navigation",
+    "target": "gps",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "maps",
+    "target": "navigation",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "telescope",
+    "target": "maps",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "radio",
+    "target": "radar",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "radar",
+    "target": "satellites",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "ml",
+    "target": "agi",
+    "type": "forward",
+    "weight": 9
+  },
   {
     "source": "deep-learning",
     "target": "agi",
     "type": "forward",
     "weight": 10
   },
-  { "source": "llm", "target": "agi", "type": "forward", "weight": 10 },
+  {
+    "source": "llm",
+    "target": "agi",
+    "type": "forward",
+    "weight": 10
+  },
   {
     "source": "neural-interface",
     "target": "agi",
     "type": "forward",
     "weight": 8
   },
-  { "source": "synbio", "target": "agi", "type": "forward", "weight": 6 },
+  {
+    "source": "synbio",
+    "target": "agi",
+    "type": "forward",
+    "weight": 6
+  },
   {
     "source": "computing",
     "target": "quantum-computing",
@@ -519,9 +791,24 @@
     "type": "forward",
     "weight": 9
   },
-  { "source": "neuromorphic", "target": "agi", "type": "forward", "weight": 8 },
-  { "source": "grid", "target": "agi", "type": "forward", "weight": 6 },
-  { "source": "robotics", "target": "agi", "type": "forward", "weight": 7 },
+  {
+    "source": "neuromorphic",
+    "target": "agi",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "grid",
+    "target": "agi",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "robotics",
+    "target": "agi",
+    "type": "forward",
+    "weight": 7
+  },
   {
     "source": "deep-learning",
     "target": "diffusion-models",
@@ -558,9 +845,1000 @@
     "type": "forward",
     "weight": 9
   },
-  { "source": "computing", "target": "vr", "type": "forward", "weight": 7 },
-  { "source": "vr", "target": "multimodal-ai", "type": "forward", "weight": 6 },
-  { "source": "agi", "target": "unknown-1", "type": "forward", "weight": 5 },
-  { "source": "agi", "target": "unknown-2", "type": "forward", "weight": 5 },
-  { "source": "agi", "target": "infinity", "type": "forward", "weight": 5 }
+  {
+    "source": "computing",
+    "target": "vr",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "vr",
+    "target": "multimodal-ai",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "agi",
+    "target": "unknown-1",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "agi",
+    "target": "unknown-2",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "agi",
+    "target": "infinity",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "language",
+    "target": "algorithms",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "language",
+    "target": "binary-code",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "computing",
+    "target": "punch-cards",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "punch-cards",
+    "target": "writing",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "computing",
+    "target": "gui",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "gui",
+    "target": "language",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "language",
+    "target": "mouse",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "internet",
+    "target": "hypertext",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "www",
+    "target": "search-engine",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "www",
+    "target": "social-media",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "social-media",
+    "target": "television",
+    "type": "backlink",
+    "weight": 3
+  },
+  {
+    "source": "www",
+    "target": "e-commerce",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "e-commerce",
+    "target": "telephone",
+    "type": "backlink",
+    "weight": 3
+  },
+  {
+    "source": "internet",
+    "target": "streaming",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "internet",
+    "target": "cybersecurity",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "cloud-computing",
+    "target": "big-data",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "big-data",
+    "target": "telegraph",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "computing",
+    "target": "virtual-reality",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "virtual-reality",
+    "target": "telephone",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "vr",
+    "target": "augmented-reality",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "augmented-reality",
+    "target": "transistor",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "blockchain",
+    "target": "smart-contracts",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "blockchain",
+    "target": "dao",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "blockchain",
+    "target": "nft",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "nft",
+    "target": "writing",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "blockchain",
+    "target": "web3",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "web3",
+    "target": "telegraph",
+    "type": "backlink",
+    "weight": 3
+  },
+  {
+    "source": "smartphone",
+    "target": "5g",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "internet",
+    "target": "iot",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "cloud-computing",
+    "target": "edge-computing",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "cloud-computing",
+    "target": "serverless",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "serverless",
+    "target": "telegraph",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "cloud-computing",
+    "target": "microservices",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "cloud-computing",
+    "target": "containers",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "containers",
+    "target": "www",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "ml",
+    "target": "perceptron",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "perceptron",
+    "target": "unknown-2",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "deep-learning",
+    "target": "neural-networks",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "neural-networks",
+    "target": "unknown-2",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "agi",
+    "target": "backpropagation",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "backpropagation",
+    "target": "diffusion-models",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "deep-learning",
+    "target": "cnn",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "cnn",
+    "target": "quantum-computing",
+    "type": "backlink",
+    "weight": 3
+  },
+  {
+    "source": "deep-learning",
+    "target": "rnn",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "llm",
+    "target": "transformers",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "transformers",
+    "target": "neuromorphic",
+    "type": "backlink",
+    "weight": 3
+  },
+  {
+    "source": "agi",
+    "target": "attention-mechanism",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "deep-learning",
+    "target": "gans",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "gans",
+    "target": "unknown-1",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "reinforcement-learning",
+    "target": "alphago",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "agi",
+    "target": "expert-systems",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "expert-systems",
+    "target": "unknown-1",
+    "type": "backlink",
+    "weight": 3
+  },
+  {
+    "source": "agi",
+    "target": "computer-vision",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "agi",
+    "target": "nlp",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "nlp",
+    "target": "neuromorphic",
+    "type": "backlink",
+    "weight": 3
+  },
+  {
+    "source": "agi",
+    "target": "speech-recognition",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "speech-recognition",
+    "target": "vr",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "agi",
+    "target": "generative-ai",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "ml",
+    "target": "automl",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "agi",
+    "target": "explainable-ai",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "ml",
+    "target": "federated-learning",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "federated-learning",
+    "target": "multimodal-ai",
+    "type": "backlink",
+    "weight": 3
+  },
+  {
+    "source": "robotics",
+    "target": "embodied-ai",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "medicine",
+    "target": "anesthesia",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "anesthesia",
+    "target": "crispr",
+    "type": "backlink",
+    "weight": 3
+  },
+  {
+    "source": "medicine",
+    "target": "x-ray",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "agriculture",
+    "target": "mri",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "mri",
+    "target": "fermentation",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "agriculture",
+    "target": "ct-scan",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "ct-scan",
+    "target": "genetics",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "medicine",
+    "target": "ultrasound",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "medicine",
+    "target": "pacemaker",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "medicine",
+    "target": "prosthetics",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "agriculture",
+    "target": "bionics",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "bionics",
+    "target": "breeding",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "medicine",
+    "target": "organ-transplant",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "organ-transplant",
+    "target": "breeding",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "genetics",
+    "target": "stem-cells",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "genetics",
+    "target": "cloning",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "genetics",
+    "target": "gene-therapy",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "medicine",
+    "target": "immunotherapy",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "immunotherapy",
+    "target": "fermentation",
+    "type": "backlink",
+    "weight": 3
+  },
+  {
+    "source": "internet",
+    "target": "telemedicine",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "smartphone",
+    "target": "wearables",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "computing",
+    "target": "bioinformatics",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "neural-interface",
+    "target": "brain-computer-interface",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "agriculture",
+    "target": "neuroplasticity",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "electricity",
+    "target": "hydropower",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "hydropower",
+    "target": "grid",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "electricity",
+    "target": "geothermal",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "steam",
+    "target": "tidal-power",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "tidal-power",
+    "target": "electric-motor",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "agriculture",
+    "target": "biofuels",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "biofuels",
+    "target": "nuclear",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "steam",
+    "target": "hydrogen-fuel",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "batteries",
+    "target": "solid-state-battery",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "solid-state-battery",
+    "target": "electricity",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "electricity",
+    "target": "wireless-power",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "electricity",
+    "target": "superconductors",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "superconductors",
+    "target": "solar",
+    "type": "backlink",
+    "weight": 3
+  },
+  {
+    "source": "grid",
+    "target": "smart-grid",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "smart-grid",
+    "target": "solar",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "steam",
+    "target": "carbon-capture",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "carbon-capture",
+    "target": "electric-motor",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "rocketry",
+    "target": "space-suit",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "space-suit",
+    "target": "gps",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "rocketry",
+    "target": "lunar-lander",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "rocketry",
+    "target": "mars-rover",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "satellites",
+    "target": "voyager",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "telescope",
+    "target": "hubble",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "telescope",
+    "target": "james-webb",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "james-webb",
+    "target": "maps",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "rocketry",
+    "target": "space-shuttle",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "rocketry",
+    "target": "reusable-rockets",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "satellites",
+    "target": "starlink",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "starlink",
+    "target": "compass",
+    "type": "backlink",
+    "weight": 3
+  },
+  {
+    "source": "rocketry",
+    "target": "space-tourism",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "space-tourism",
+    "target": "telescope",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "rocketry",
+    "target": "asteroid-mining",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "navigation",
+    "target": "sextant",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "sextant",
+    "target": "chisels",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "stone-tools",
+    "target": "gyroscope",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "stone-tools",
+    "target": "laser",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "laser",
+    "target": "precision",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "stone-tools",
+    "target": "lidar",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "lidar",
+    "target": "machine-tools",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "transistor",
+    "target": "microchip",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "microchip",
+    "target": "machine-tools",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "robotics",
+    "target": "drone",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "robotics",
+    "target": "autonomous-vehicles",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "robotics",
+    "target": "exoskeleton",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "writing",
+    "target": "paper",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "agriculture",
+    "target": "silk",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "silk",
+    "target": "concrete",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "bronze",
+    "target": "gunpowder",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "gunpowder",
+    "target": "steel",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "metallurgy",
+    "target": "aluminum",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "aluminum",
+    "target": "concrete",
+    "type": "backlink",
+    "weight": 3
+  },
+  {
+    "source": "metallurgy",
+    "target": "titanium",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "semiconductors",
+    "target": "silicon",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "plastics",
+    "target": "carbon-fiber",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "carbon-fiber",
+    "target": "bronze",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "bronze",
+    "target": "aerogel",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "aerogel",
+    "target": "alloys",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "plastics",
+    "target": "bioplastics",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "bioplastics",
+    "target": "nanotubes",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "markets",
+    "target": "trade-routes",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "trade-routes",
+    "target": "writing-social",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "money",
+    "target": "currency",
+    "type": "forward",
+    "weight": 8
+  },
+  {
+    "source": "markets",
+    "target": "stock-market",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "democracy",
+    "target": "human-rights",
+    "type": "forward",
+    "weight": 6
+  },
+  {
+    "source": "writing-social",
+    "target": "globalism",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "globalism",
+    "target": "money",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "writing-social",
+    "target": "social-security",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "social-security",
+    "target": "corporations",
+    "type": "backlink",
+    "weight": 2
+  },
+  {
+    "source": "medicine",
+    "target": "universal-healthcare",
+    "type": "forward",
+    "weight": 5
+  },
+  {
+    "source": "universities",
+    "target": "education",
+    "type": "forward",
+    "weight": 7
+  },
+  {
+    "source": "education",
+    "target": "law",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "writing",
+    "target": "libraries",
+    "type": "forward",
+    "weight": 9
+  },
+  {
+    "source": "libraries",
+    "target": "insurance",
+    "type": "backlink",
+    "weight": 1
+  },
+  {
+    "source": "writing-social",
+    "target": "museums",
+    "type": "forward",
+    "weight": 6
+  }
 ]

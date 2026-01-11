@@ -31,26 +31,26 @@ export const getVisibleEdges = (edges, visibleNodeIds) => {
  * Level of Detail (LOD) - adjust rendering quality based on zoom level
  */
 export const getLODSettings = (zoom) => {
-  if (zoom < 0.5) {
+  if (zoom < 0.6) {
     return {
       renderLabels: false,
-      renderGlow: false,
+      renderGlow: false, // Cleaner "star map" look
       renderPulses: false,
-      edgeWidth: 0.5
+      edgeWidth: 0.3
     };
-  } else if (zoom < 1) {
+  } else if (zoom < 1.2) {
     return {
-      renderLabels: false,
+      renderLabels: false, // Hide labels until closer zoom
       renderGlow: true,
-      renderPulses: false,
-      edgeWidth: 1
+      renderPulses: true,
+      edgeWidth: 0.8
     };
   } else {
     return {
       renderLabels: true,
       renderGlow: true,
       renderPulses: true,
-      edgeWidth: 1
+      edgeWidth: 1.2
     };
   }
 };

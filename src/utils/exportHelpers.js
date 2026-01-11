@@ -50,8 +50,8 @@ export const exportToSVG = (nodes, edges, clusters, filename = 'neuro-chain.svg'
     const target = nodes.find(n => n.id === edge.target);
     if (!source || !target) return;
 
-    const sColor = clusters[source.cluster]?.color || '#666';
-    const tColor = clusters[target.cluster]?.color || '#666';
+    const sColor = clusters[source.cluster]?.color || '#666666';
+    const tColor = clusters[target.cluster]?.color || '#666666';
     
     svg += `  <line x1="${source.x + offsetX}" y1="${source.y + offsetY}" 
                  x2="${target.x + offsetX}" y2="${target.y + offsetY}" 

@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import KeyboardHelp from './components/KeyboardHelp';
 import Minimap from './components/Minimap';
 import StatsPanel from './components/StatsPanel';
+import ViewSettings from './components/ViewSettings';
 import ErrorBoundary from './components/ErrorBoundary';
 import useKeyboardShortcuts from './hooks/useKeyboardShortcuts';
 import { config, validateEnv, debug } from './config/env';
@@ -40,6 +41,30 @@ function App() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [animating, setAnimating] = useState(true);
   const [cameraTarget, setCameraTarget] = useState({ x: 0, y: 0 });
+  const [showSettings, setShowSettings] = useState(false);
+  
+  // View Settings State
+  const [viewSettings, setViewSettings] = useState({
+    renderLabels: true,
+    renderGlow: true,
+    renderPulses: true,
+    theme: 'default'
+  });
+
+  const handleToggleViewSetting = (key) => {
+    setViewSettings(prev => ({
+      ...prev,
+      [key]: !prev[key]
+    }));
+  };
+
+  const handleSetTheme = (theme) => {
+    setViewSettings(prev => ({
+      ...prev,
+      theme
+    }));
+  };
+
 
   const searchInputRef = useRef(null);
   const canvasRef = useRef(null);
@@ -155,6 +180,7 @@ function App() {
         cameraTarget={cameraTarget}
         canvasRef={canvasRef}
         onNodeClick={handleNodeSelect}
+        viewSettings={viewSettings}
       />
       
       <TitleBlock />
@@ -171,16 +197,12 @@ function App() {
         onFocusCluster={handleFocusCluster}
       />
       
-      <Panel
-        data={data}
-        onDataUpdate={handleDataUpdate}
-      />
-      
       <Controls
         animating={animating}
         onResetView={handleResetView}
         onToggleAnimation={handleToggleAnimation}
         onExportData={handleExportData}
+        onToggleSettings={() => setShowSettings(!showSettings)}
         canvasRef={canvasRef}
         nodes={data.nodes}
         edges={data.edges}
@@ -188,6 +210,15 @@ function App() {
         camera={cameraTarget}
         zoom={1}
       />
+
+      {showSettings && (
+        <ViewSettings 
+            settings={viewSettings}
+            onToggleSetting={handleToggleViewSetting}
+            onSetTheme={handleSetTheme}
+            onClose={() => setShowSettings(false)}
+        />
+      )}
       
       <Tooltip
         hoveredNode={hoveredNode}

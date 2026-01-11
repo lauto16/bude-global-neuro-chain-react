@@ -8,6 +8,7 @@ const Controls = React.memo(({
   onResetView, 
   onToggleAnimation, 
   onExportData,
+  onToggleSettings, // New prop
   canvasRef,
   nodes,
   edges,
@@ -49,6 +50,14 @@ const Controls = React.memo(({
 
   return (
     <div className={styles.controls}>
+      <button
+        className={styles.controlBtn}
+        onClick={onToggleSettings}
+        title="View Settings"
+      >
+        <span className={styles.icon}>⚙️</span>
+      </button>
+
       <button
         className={styles.controlBtn}
         onClick={onResetView}
