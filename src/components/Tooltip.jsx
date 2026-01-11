@@ -70,6 +70,9 @@ const Tooltip = React.memo(({ hoveredNode, mousePos, clusters, edges, descriptio
             {description}
           </div>
       ) : null}
+      <div className={styles.tooltipHint}>
+        (Click to Focus)
+      </div>
     </div>
   );
 });

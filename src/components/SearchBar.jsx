@@ -34,7 +34,7 @@ const highlightMatch = (text, term) => {
   );
 };
 
-const SearchBar = React.memo(({ nodes, onNodeSelect, clusters, inputRef }) => {
+const SearchBar = React.memo(({ nodes, onNodeSelect, clusters, inputRef, onSearchChange }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -56,6 +56,16 @@ const SearchBar = React.memo(({ nodes, onNodeSelect, clusters, inputRef }) => {
       .sort((a, b) => b.score - a.score)
       .slice(0, 10);
   }, [searchTerm, nodes, clusters]);
+
+  // Propagate search state to parent for visual filtering
+  React.useEffect(() => {
+    if (onSearchChange) {
+        onSearchChange({
+            term: searchTerm,
+            matchedIds: filteredNodes.map(n => n.id)
+        });
+    }
+  }, [searchTerm, filteredNodes, onSearchChange]);
 
   const [isExpanded, setIsExpanded] = useState(false);
 

@@ -24,6 +24,7 @@
     background: rgba(12,12,18,0.4);
     height: auto;
     overflow-y: hidden;
+    /* On mobile, collapsed state should be very small */
 }
 
 .legendHeader {
@@ -57,22 +58,51 @@
 .legendItem {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.5rem;
   font-size: 0.65rem;
   color: var(--text-muted);
   cursor: pointer;
-  transition: color 0.2s;
+  transition: all 0.2s;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
 }
 
 .legendItem:hover {
   color: var(--text-primary);
+  background: rgba(255,255,255,0.03);
+}
+
+.legendItem.hidden {
+    opacity: 0.5;
+}
+
+.visibilityToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    transition: color 0.2s;
+}
+
+.visibilityToggle:hover {
+    color: #fff;
+}
+
+.legendContent {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex: 1;
 }
 
 .legendDot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  box-shadow: 0 0 8px currentColor;
+  transition: all 0.3s ease;
 }
 
 /* Scrollbar for large cluster lists */
@@ -90,7 +120,7 @@
 @media (max-width: 768px) {
   .legend {
     right: 1rem;
-    top: 5rem; /* Push down on mobile to clear search/header if they wrap */
+    top: 5rem;
     padding: 0.5rem;
     max-height: 40vh;
   }

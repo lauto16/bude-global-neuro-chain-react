@@ -7,7 +7,11 @@
     "y": 0,
     "size": 28,
     "year": -400000,
-    "description": "Controlled fire - humanity's first major technology"
+    "description": "Controlled fire - humanity's first major technology",
+    "status": "Foundational",
+    "maturity": 100,
+    "contributors": ["Homo Erectus", "Early Hominids"],
+    "technologies": ["Thermal Energy", "Chemical Reaction", "Light Source"]
   },
   {
     "id": "cooking",
@@ -16,7 +20,11 @@
     "x": -80,
     "y": -100,
     "size": 16,
-    "year": -250000
+    "year": -250000,
+    "status": "Mature",
+    "maturity": 100,
+    "contributors": ["Early Humans"],
+    "technologies": ["Food Processing", "Digestion Efficiency"]
   },
   {
     "id": "warmth",

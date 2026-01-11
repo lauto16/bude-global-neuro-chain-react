@@ -2,7 +2,9 @@
   {
     "source": "fire",
     "target": "cooking",
-    "type": "forward",
+    "source": "fire",
+    "target": "cooking",
+    "type": "accelerates",
     "weight": 10
   },
   {

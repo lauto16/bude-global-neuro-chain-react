@@ -14,7 +14,10 @@ const CanvasNetwork = React.memo(({
   cameraTarget,
   canvasRef: externalCanvasRef,
   onNodeClick,
-  viewSettings = { renderLabels: true, renderGlow: true, renderPulses: true, theme: 'default' }
+  viewSettings = { renderLabels: true, renderGlow: true, renderPulses: true, theme: 'default' },
+  searchState = { term: '', matchedIds: [] },
+  hiddenClusters = new Set(),
+  maxYear = 2050
 }) => {
   const internalCanvasRef = useRef(null);
   const canvasRef = externalCanvasRef || internalCanvasRef;
@@ -31,28 +34,43 @@ const CanvasNetwork = React.memo(({
   const spatialHashRef = useRef(new SpatialHash(100));
   
   // Visual effects state
+  // Visual effects state
   const pulsesRef = useRef([]); 
+  
+  // Search Filtering Logic (MOVED TO TOP LEVEL)
+  const matchedSet = useMemo(() => new Set(searchState.matchedIds), [searchState]);
+  const isSearchActive = searchState && searchState.term && searchState.term.length > 0;
 
-  // Process nodes with animation properties
+
+  // Filter valid nodes and edges respecting hiddenClusters AND Year
   const processedNodes = useMemo(() => {
-    const nodes = data.nodes.map(n => ({
+    return data.nodes.filter(n => {
+        // 1. Cluster check
+        if (hiddenClusters.has(n.cluster)) return false;
+        // 2. Year check (if node has year, it must be <= maxYear)
+        // If node has NO year, assume it's timeless/always visible? Or hide? 
+        // Let's assume most have years. If not, default to visible.
+        if (n.year !== undefined && n.year > maxYear) return false;
+        return true;
+    }).map(n => ({
       ...n,
       originalX: n.x,
       originalY: n.y,
       vx: 0,
       vy: 0
     }));
-    // Build spatial hash for fast hover detection
-    spatialHashRef.current.build(nodes);
-    return nodes;
-  }, [data.nodes]);
+  }, [data.nodes, hiddenClusters]);
+
+  // Build spatial hash from visible nodes
+  useEffect(() => {
+      spatialHashRef.current.build(processedNodes);
+  }, [processedNodes]);
 
   // Create node map for O(1) lookups
   const nodeMap = useMemo(() => {
     return new Map(processedNodes.map(n => [n.id, n]));
   }, [processedNodes]);
 
-  // Filter valid edges
   const processedEdges = useMemo(() => {
     return data.edges.filter(e => nodeMap.has(e.source) && nodeMap.has(e.target));
   }, [data.edges, nodeMap]);
@@ -414,6 +432,15 @@ const CanvasNetwork = React.memo(({
       const renderGlow = viewSettings.renderGlow && currentTheme.glow; 
       const renderPulses = viewSettings.renderPulses && currentTheme.pulses;
 
+      // Search Filtering Logic
+      // (Moved to top level: matchedSet, isSearchActive)
+       
+      const getOpacity = (id) => {
+          if (!isSearchActive) return 1;
+          if (matchedSet.has(id)) return 1;
+          return 0.1; // Dimmed
+      };
+
       // Draw edges
       processedEdges.forEach(edge => {
         const source = nodeMap.get(edge.source);
@@ -438,17 +465,29 @@ const CanvasNetwork = React.memo(({
         }
 
         const gradient = ctx.createLinearGradient(source.x, source.y, target.x, target.y);
-        gradient.addColorStop(0, sColor + '40');
-        gradient.addColorStop(1, tColor + '40');
+        
+        let alphaS = getOpacity(source.id);
+        let alphaT = getOpacity(target.id);
+        
+        // If searching, only show edges between two matched nodes fully? 
+        // Or if one match? Let's say if BOTH are dimmed, edge is barely visible.
+        const edgeAlpha = Math.min(alphaS, alphaT) * 0.4; // Base edge opacity
+
+        gradient.addColorStop(0, sColor + Math.floor(255 * edgeAlpha).toString(16).padStart(2, '0'));
+        gradient.addColorStop(1, tColor + Math.floor(255 * edgeAlpha).toString(16).padStart(2, '0'));
 
         ctx.beginPath();
         ctx.strokeStyle = gradient;
         ctx.lineWidth = (edge.type === 'backlink' ? 1.5 : 1) * lod.edgeWidth;
 
         if (edge.type === 'backlink') {
-          ctx.setLineDash([4, 4]);
+            ctx.setLineDash([4, 4]); // Dashed
+        } else if (edge.type === 'accelerates') {
+            ctx.setLineDash([2, 6]); // Dotted (sparse)
+        } else if (edge.type === 'inhibits') {
+            ctx.setLineDash([10, 2]); // Long dashes
         } else {
-          ctx.setLineDash([]);
+            ctx.setLineDash([]); // Solid (forward/default)
         }
 
         const midX = (source.x + target.x) / 2;
@@ -542,6 +581,11 @@ const CanvasNetwork = React.memo(({
       // Draw nodes
       processedNodes.forEach(node => {
         const isHovered = hoveredNode?.id === node.id;
+        const opacity = getOpacity(node.id);
+        
+        // Skip rendering distinct details if fully filtered out? 
+        // No, keep them visible but faint.
+        
         const size = isHovered ? node.size * 1.5 : node.size;
         
         let color = data.clusters[node.cluster]?.color || currentTheme.nodeBase;
@@ -556,10 +600,11 @@ const CanvasNetwork = React.memo(({
         }
 
         // Glow effect
-        if ((renderGlow || isHovered) && currentTheme.glow) {
-          const glowSize = size * (isHovered ? 3 : 2.5);
+        if ((renderGlow || isHovered) && currentTheme.glow && opacity > 0.5) {
+          const glowSize = size * (isHovered ? 4 : 2.5); // Enhanced hover glow size
+          const glowAlpha = isHovered ? '60' : '25';     // Enhanced hover glow opacity
           const glow = ctx.createRadialGradient(node.x, node.y, 0, node.x, node.y, glowSize);
-          glow.addColorStop(0, color + '25');
+          glow.addColorStop(0, color + glowAlpha);
           glow.addColorStop(1, 'transparent');
           ctx.beginPath();
           ctx.arc(node.x, node.y, glowSize, 0, Math.PI * 2);
@@ -583,14 +628,15 @@ const CanvasNetwork = React.memo(({
               node.y,
               size
             );
-            ng.addColorStop(0, color);
-            ng.addColorStop(1, color + '70');
+            ng.addColorStop(0, color + Math.floor(255 * opacity).toString(16).padStart(2, '0'));
+            ng.addColorStop(1, color + Math.floor(180 * opacity).toString(16).padStart(2, '0'));
             ctx.fillStyle = ng;
         }
         
+        
         ctx.fill();
 
-        ctx.strokeStyle = color;
+        ctx.strokeStyle = color + Math.floor(255 * opacity).toString(16).padStart(2, '0');
         ctx.lineWidth = isHovered ? 2 : 1;
         ctx.stroke();
 
@@ -609,7 +655,10 @@ const CanvasNetwork = React.memo(({
         }
 
         // Label
-        if (renderLabels || isHovered) {
+        // Only show label if matching search OR if no search and (setting on OR hovered)
+        const showLabel = (isSearchActive && opacity === 1) || (!isSearchActive && (renderLabels || isHovered));
+
+        if (showLabel) {
           ctx.font = `${isHovered ? '11px' : '9px'} ${currentTheme.font}, monospace`;
           ctx.textAlign = 'center';
           
@@ -635,7 +684,7 @@ const CanvasNetwork = React.memo(({
         cancelAnimationFrame(animationFrameRef.current);
       }
     };
-  }, [dimensions, camera, zoom, animating, processedNodes, processedEdges, nodeMap, data.clusters, hoveredNode]);
+  }, [dimensions, camera, zoom, animating, processedNodes, processedEdges, nodeMap, data.clusters, hoveredNode, matchedSet, isSearchActive]);
 
   return (
     <div className={styles.canvasContainer}>
